@@ -1,0 +1,196 @@
+{
+  "version": 2,
+  "n": 21,
+  "items": [
+    {
+      "question": "How can you configure traffic splitting for models in Databricks?",
+      "reference_answer": "Traffic splitting can be configured in the UI by selecting the model service and adding destination entries for each model backend, setting the traffic percentage for each.",
+      "gold_url": "https://docs.databricks.com/aws/en/ai-gateway/configure-traffic-splitting",
+      "title": "Configure routing and fallbacks for models | Databricks on AWS",
+      "evidence": "In your Databricks workspace, click AI Gateway in the sidebar and select the model service you want to edit.",
+      "type": "generated",
+      "id": 0
+    },
+    {
+      "question": "What happens if a request fails when using fallbacks in Databricks?",
+      "reference_answer": "If a request fails, the system retries it against the configured fallback destinations in the order you defined until one succeeds or all options are exhausted.",
+      "gold_url": "https://docs.databricks.com/aws/en/ai-gateway/configure-traffic-splitting",
+      "title": "Configure routing and fallbacks for models | Databricks on AWS",
+      "evidence": "The system attempts fallbacks sequentially until one succeeds or it exhausts all fallback options.",
+      "type": "paraphrase",
+      "id": 1
+    },
+    {
+      "question": "How can I pick an open-source model when using GitHub Copilot?",
+      "reference_answer": "How can I pick an open-source model when not using GitHub Copilot?",
+      "gold_url": "https://docs.databricks.com/aws/en/ai-gateway/coding-agent-open-source-models",
+      "title": "Use open-source models | Databricks on AWS",
+      "evidence": "In GitHub Copilot in Visual Studio Code, select the model from the Databricks group in the Copilot Chat model picker.",
+      "type": "paraphrase",
+      "id": 2
+    },
+    {
+      "question": "What is Unity Gateway and how does it enhance AI governance for enterprises?",
+      "reference_answer": "Unity Gateway is the Databricks governance solution for enterprise AI that extends governance beyond data and AI assets to runtime interactions between models, agents, and tools.",
+      "gold_url": "https://docs.databricks.com/aws/en/ai-gateway/",
+      "title": "AI governance with Unity Gateway | Databricks on AWS",
+      "evidence": "Unity Gateway is the Databricks governance solution for enterprise AI. Built on Unity Catalog, it extends governance beyond your data and AI assets to the runtime interactions between models, agents, MCP servers, and tools.",
+      "type": "generated",
+      "id": 3
+    },
+    {
+      "question": "How can a user switch models in the Unity Gateway?",
+      "reference_answer": "A user can switch models by using the agent's model picker or by entering the command /model in the agent.",
+      "gold_url": "https://docs.databricks.com/aws/en/ai-gateway/coding-agent-model-selection",
+      "title": "Select models or use Smart Routing | Databricks on AWS",
+      "evidence": "Choose and switch models with the agent's model picker, or let Smart Routing select models for delegated tasks.",
+      "type": "generated",
+      "id": 4
+    },
+    {
+      "question": "What does Smart Routing do for users in Databricks?",
+      "reference_answer": "Smart Routing automatically selects the least expensive model that can handle a user's task, eliminating the need to choose a model for each request.",
+      "gold_url": "https://docs.databricks.com/aws/en/ai-gateway/coding-agent-model-selection",
+      "title": "Select models or use Smart Routing | Databricks on AWS",
+      "evidence": "Smart Routing selects the lowest-cost model capable of handling your task, so you don't choose a model for every request.",
+      "type": "paraphrase",
+      "id": 5
+    },
+    {
+      "question": "What do you need to do to allow users to access specific model provider services?",
+      "reference_answer": "To allow users to access specific model provider services, you must create a governed tag named 'access_status' with the value 'approved' and apply it to the services.",
+      "gold_url": "https://docs.databricks.com/aws/en/ai-gateway/govern-access-to-models-with-grant-policies",
+      "title": "Govern models and MCPs with GRANT policies | Databricks on AWS",
+      "evidence": "Create a governed tag named access_status with the allowed value approved.",
+      "type": "paraphrase",
+      "id": 6
+    },
+    {
+      "question": "What features does Catalog Explorer provide for managing data assets?",
+      "reference_answer": "Catalog Explorer allows users to view schema details, preview sample data, see table and model details, and explore entity relationships.",
+      "gold_url": "https://docs.databricks.com/aws/en/catalog-explorer/",
+      "title": "What is Catalog Explorer? | Databricks on AWS",
+      "evidence": "For example, you can use Catalog Explorer to view schema details, preview sample data, see table and model details, and explore entity relationships.",
+      "type": "generated",
+      "id": 7
+    },
+    {
+      "question": "What is the top-level securable object in Unity Catalog?",
+      "reference_answer": "The metastore is the top-level securable object in Unity Catalog.",
+      "gold_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/securable-objects",
+      "title": "Unity Catalog securable objects reference | Databricks on AWS",
+      "evidence": "The metastore is the top-level securable object in Unity Catalog.",
+      "type": "generated",
+      "id": 8
+    },
+    {
+      "question": "What is the top-level container in Unity Catalog that holds all securable objects?",
+      "reference_answer": "The top-level Unity Catalog container is called a Metastore, which holds all securable objects such as catalogs and storage credentials.",
+      "gold_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/setup-uc",
+      "title": "Unity Catalog setup guide | Databricks on AWS",
+      "evidence": "Metastore: The top-level Unity Catalog container, scoped to a single cloud region. It holds all securable objects: catalogs, storage credentials, external locations, and more.",
+      "type": "generated",
+      "id": 9
+    },
+    {
+      "question": "How can I check if my Databricks workspace is set up for Unity Catalog?",
+      "reference_answer": "You can verify if your workspace is set up for Unity Catalog by checking the Metastore column in the account console or by running a SQL query that returns the current metastore ID.",
+      "gold_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/setup-uc",
+      "title": "Unity Catalog setup guide | Databricks on AWS",
+      "evidence": "Find your workspace and check the Metastore column. If a metastore name is present, your workspace is enabled for Unity Catalog.",
+      "type": "paraphrase",
+      "id": 10
+    },
+    {
+      "question": "How does Databricks Data Classification help in managing sensitive data in Unity Catalog?",
+      "reference_answer": "Databricks Data Classification uses an agent to automatically classify and tag tables in your catalog, allowing you to discover sensitive data and apply governance controls over the results.",
+      "gold_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-classification",
+      "title": "Data Classification | Databricks on AWS",
+      "evidence": "Databricks Data Classification uses an agent to automatically classify and tag tables in your catalog.",
+      "type": "generated",
+      "id": 11
+    },
+    {
+      "question": "What are the two main aspects that anomaly detection monitors in tables for data quality?",
+      "reference_answer": "Anomaly detection monitors tables for freshness and completeness.",
+      "gold_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/",
+      "title": "Data quality monitoring | Databricks on AWS",
+      "evidence": "Anomaly detection monitors enabled tables for freshness and completeness.",
+      "type": "generated",
+      "id": 12
+    },
+    {
+      "question": "Where should I go to define a path pointing to an S3 bucket in Unity Catalog?",
+      "reference_answer": "You should create an external location object to reference an S3 bucket path inside Unity Catalog.",
+      "gold_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/best-practices",
+      "title": "Unity Catalog best practices | Databricks on AWS",
+      "evidence": "",
+      "type": "paraphrase",
+      "id": 13
+    },
+    {
+      "question": "Is there a central place to see my workspace assets and structure in the interface?",
+      "reference_answer": "Yes, Catalog Explorer provides a user interface to explore and manage your data schemas, tables, and permissions.",
+      "gold_url": "https://docs.databricks.com/aws/en/catalog-explorer/",
+      "title": "What is Catalog Explorer? | Databricks on AWS",
+      "evidence": "",
+      "type": "paraphrase",
+      "id": 14
+    },
+    {
+      "question": "How do I authorize a specific user group to run queries using AI gateway endpoints?",
+      "reference_answer": "You can control access by applying grant policies to model services within the AI Gateway.",
+      "gold_url": "https://docs.databricks.com/aws/en/ai-gateway/govern-access-to-models-with-grant-policies",
+      "title": "Govern models and MCPs with GRANT policies | Databricks on AWS",
+      "evidence": "",
+      "type": "paraphrase",
+      "id": 15
+    },
+    {
+      "question": "Which securable object is the parent of catalogs in the Unity Catalog object hierarchy?",
+      "reference_answer": "The metastore is the top-level container for metadata and the parent of catalogs in Unity Catalog.",
+      "gold_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/securable-objects",
+      "title": "Unity Catalog securable objects reference | Databricks on AWS",
+      "evidence": "",
+      "type": "exact_term",
+      "id": 16
+    },
+    {
+      "question": "What is the main difference between managed and external tables in Unity Catalog when dropping them?",
+      "reference_answer": "Dropping a managed table deletes both its metadata and the underlying files from your cloud storage, while dropping an external table only removes the metadata, leaving the actual files intact.",
+      "gold_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/managed-versus-external",
+      "title": "Managed versus external assets in Unity Catalog | Databricks on AWS",
+      "evidence": "",
+      "type": "exact_term",
+      "id": 17
+    },
+    {
+      "question": "What is the name of the tool or CLI command used to upgrade schemas to Unity Catalog?",
+      "reference_answer": "You can use the Upgrade Wizard in Catalog Explorer to upgrade your non-Unity Catalog tables.",
+      "gold_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/upgrade/",
+      "title": "Upgrade a Databricks workspace to Unity Catalog | Databricks on AWS",
+      "evidence": "",
+      "type": "exact_term",
+      "id": 18
+    },
+    {
+      "question": "How do I configure AWS IAM Identity Center to sync groups with Google Cloud Identity?",
+      "reference_answer": "I don't know based on the provided documentation.",
+      "gold_url": null,
+      "title": null,
+      "evidence": "",
+      "type": "out_of_scope",
+      "id": 19
+    },
+    {
+      "question": "Can I use Azure Data Factory to directly load tables into Databricks without Unity Catalog?",
+      "reference_answer": "I don't know based on the provided documentation.",
+      "gold_url": null,
+      "title": null,
+      "evidence": "",
+      "type": "out_of_scope",
+      "id": 20
+    }
+  ],
+  "changelog": "v2: repaired an item whose question was saved as 'd' during review (question restored, reference answer redrafted from the gold page and checked)."
+}

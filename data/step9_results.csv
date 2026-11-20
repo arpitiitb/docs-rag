@@ -1,0 +1,4 @@
+config,correct,correct %,false refusals,out-of-scope refused,avg input tokens
+baseline (top 5),18/19,0.95,1,2/2,1899
+max 2 chunks per page,18/19,0.95,1,2/2,1929
+top 8,17/19,0.89,2,2/2,3028
